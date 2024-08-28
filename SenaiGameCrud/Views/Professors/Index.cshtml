@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SenaiGameCrud.Models.Professor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registro de professores</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Cadastrar professor</a>
+</p>
+<table class="table table-primary table-striped table-bordered border-dark" id="table">
+    <thead class="table-light"> 
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idade)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdProf" class="btn btn-secondary">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProf" class="btn btn-dark">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProf" class="btn btn-danger">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

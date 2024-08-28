@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tarde.cetafaju\\Downloads\\SenaiGameCrud - Olavo EMIDES3AM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{269D84E9-2720-432F-919B-F5D57DC185BA}|SenaiGameCrud\\SenaiGameCrud.csproj|c:\\users\\tarde.cetafaju\\downloads\\senaigamecrud - olavo emides3am\\senaigamecrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{269D84E9-2720-432F-919B-F5D57DC185BA}|SenaiGameCrud\\SenaiGameCrud.csproj|solutionrelative:senaigamecrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\tarde.cetafaju\\Downloads\\SenaiGameCrud - Olavo EMIDES3AM\\SenaiGameCrud\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SenaiGameCrud\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\tarde.cetafaju\\Downloads\\SenaiGameCrud - Olavo EMIDES3AM\\SenaiGameCrud\\appsettings.Development.json",
+              "RelativeToolTip": "SenaiGameCrud\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-28T19:10:05.916Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

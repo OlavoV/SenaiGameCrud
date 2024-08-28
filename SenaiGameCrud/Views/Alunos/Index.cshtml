@@ -1,0 +1,54 @@
+﻿@model IEnumerable<SenaiGameCrud.Models.Aluno>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registro de alunos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Cadastrar aluno</a>
+</p>
+<table class="table table-primary table-striped table-bordered border-dark" id="table">
+    <thead class="table-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Matricula)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Matricula)
+            </td>
+            <td>
+                
+                    <a asp-action="Edit" asp-route-id="@item.IdAluno" id="editar" class="btn btn-secondary">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdAluno" id="detalhes" class="btn btn-dark">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAluno" id="delete" class="btn btn-danger">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
